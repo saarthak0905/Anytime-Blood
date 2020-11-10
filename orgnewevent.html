@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Event Creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <div class="title">
+          ANY TIME BLOOD
+        </div>
+        <li><a href="logout.php">Logout</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="About Us">About Us</a></li>
+        <li><a href="Contact Us">Contact Us</a></li>
+        <li><a href="homepage.php">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <fieldset class="signupcontainer" style="margin-left: 500px;">
+    <legend>ENTER EVENT DETAILS</legend>
+    <form action="orgnewevent.php" method="post">
+      <div class="form-input">
+        <label for="name">Name of Event: </label>
+        <input type="text" name="name" id="name" placeholder="Event Name">
+      </div>
+      <div class="form-input">
+        <label for="date">Date Of Event: </label>
+        <input type="date" name="date" id="date" placeholder="Event Date">
+      </div>
+      <div class="form-input">
+        <label for="time">Time of Event: </label>
+        <input type="time" name="time" id="time" placeholder="Event Time">
+      </div>
+      <div class="form-input">
+        <label for="address">Location of Event: </label>
+        <input type="text" name="address" id="address" placeholder="Event Address">
+      </div> 
+      <div class="form-input">
+        <label for="description">Event Description: </label>
+        <textarea name="description" id="description" placeholder="Enter Event Details here" style="float: right;
+        font-weight: bolder;"></textarea> 
+      </div>      
+            
+      <div class="form-input">
+        <label for="blood">Specific Blood Group Requirement (if any):</label>
+        <select id="blood" name="blood">
+          <option value="N/A">N/A</option>
+          <option value="A+">A+</option>
+          <option value="B+">B+</option>
+          <option value="AB+">AB+</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB-">AB-</option>
+          <option value="B-">B-</option>
+          <option value="A-">A-</option>
+        </select>
+      </div><br>
+
+
+      <div class="form-input">
+        <input type="submit" value="CREATE" name="signup" id="signup" class="btn"
+          style="float: left; margin-left: 50px; width: 30%" />
+        <input type="reset" value="RESET" class="btn" style="float: right; margin-right: 50px; width: 30%">
+      </div>
+    </form><br>
+    </form><br><br>
+    <form action="homepage.php">
+      <div style="width: 100%; margin: auto;">
+      <center><button class="btn" style="width: 40%;">Back</button></center>
+    </div>
+  </form>
+
+  </fieldset>
+  
+  
+
+
+</body>
+
+</html>
